@@ -1,0 +1,9 @@
+big image links on main page:
+    - assistance
+    - services
+    - products
+
+rapid links:
+    - home
+    - about
+    - contact

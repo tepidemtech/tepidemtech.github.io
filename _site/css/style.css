@@ -1,0 +1,167 @@
+body {
+    font-family: "Source Sans Pro", sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 20px;
+    /*background: #1D1D1D;*/
+    background:  #0bf;
+}
+
+p {
+    line-height: 1.6em;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+h1,
+h2 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 60px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 1.8em;
+    margin: 15px 0;
+}
+
+
+/*                                  ANIMATION KEYFRAMES*/
+@keyframes sectionImgIn {
+    0%   {filter: brightness(100%) }
+    50%  { filter: brightness(25%) }
+    100% { filter: brightness(25%) }
+}
+@keyframes sectionImgOut {
+    0%   {filter: brightness(25%) }
+    50%  { filter: brightness(100%) }
+    100% { filter: brightness(100%) }
+}
+
+@keyframes sectionSpanIn {
+    0%   { opacity: 0 }
+    50%  { opacity: 1 }
+    100% { opacity: 1 }
+}
+@keyframes sectionSpanOut {
+    0%   { opacity: 1 }
+    50%  { opacity: 0 }
+    100% { opacity: 0 }
+}
+
+@keyframes section {
+    0%   {opacity: 0}
+    50%  {opacity: 0}
+    100% {opacity: 1}
+}
+
+
+/*                                  HEADER CLASSES*/
+div.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 0 20px;
+    background: #1D1D1D;
+}
+
+a.firmTitle {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+}
+
+a.firmTitle h1 {
+    margin-left: 7px;
+    color: #0bf;
+}
+
+ul.mainNav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+a.navItem {
+    color: #0bf;
+    margin-right: 20px;
+}
+
+
+/*                                  BODY CLASSES*/
+div.sectionWrapper {
+    height: 100% - 65px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin: 30px 20px 30px 20px;
+    /*margin-right: 20px;*/
+}
+
+/*                  SECTION CLASSES*/
+
+a.section {
+    display: block; 
+    height: 80%;
+    width: 30%;
+    animation: section 2s forwards;
+}
+
+a.section img {
+    height: 100%;
+    width: 100%;
+    animation: sectionImgOut 2s forwards;
+}
+
+a.section span {
+    position: relative;
+    bottom: 50%;
+
+    font-size: 30px;
+    color: #FFF;
+
+    animation: sectionSpanOut 2s forwards;
+}
+
+a.section:hover img {
+    animation: sectionImgIn 2s forwards;
+}
+
+a.section:hover span {
+    animation: sectionSpanIn 2s forwards;
+}
+
+
+/*                                  FOOTER CLASSES*/
+div.footer {
+    height: 65px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-content: center;
+    vertical-align: center;
+    background: #1D1D1D;
+}
+
+ul.footerNav {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+}
+
+a.footerNavItem {
+    color: #0bf;
+    margin-right: 20px;
+}
