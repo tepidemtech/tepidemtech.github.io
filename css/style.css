@@ -210,7 +210,7 @@ span.aboutText {
     }
 }
 
-@media handheld and (orientation: portrait), handheld and (orientation: landscape) {
+@media (max-width: 9cm), (max-height: 15 cm) {
     body {
         font-size: 13px;
         
