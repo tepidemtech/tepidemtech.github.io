@@ -184,6 +184,8 @@ span.aboutText {
     text-align: center;
 }
 
+
+/*                                  MEDIA QUERRIES */
 @media (max-width: 720px), handheld and (orientation: portrait) {
     div.sectionsList {
         flex-direction: column;
@@ -208,7 +210,7 @@ span.aboutText {
     }
 }
 
-@media handheld {
+@media handheld and (orientation: portrait), handheld and (orientation: landscape) {
     body {
         font-size: 13px;
         
