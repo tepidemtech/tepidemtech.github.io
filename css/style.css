@@ -70,7 +70,7 @@ div.header {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 20px;
-    height: 10%;
+    max-height: 10%;
     background: #1D1D1D;
 }
 
@@ -151,7 +151,7 @@ a.section:hover span {
 
 /*                                  FOOTER CLASSES*/
 div.footer {
-    height: 10%;
+    max-height: 10%;
     margin: 0 auto;
     padding: 0 20px;
     align-content: center;
@@ -197,7 +197,7 @@ span.aboutText {
         align-items: stretch;
         justify-content: space-between;
 
-        height: 90%;
+        max-height: 90%;
     }
 
     a.section {
