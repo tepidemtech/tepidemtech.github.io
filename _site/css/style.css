@@ -100,7 +100,8 @@ a.navItem {
 }
 
 div.content {
-    width: 100%;
+    width: 90%;
+    margin: 0 5%;
 }
 
 
@@ -193,6 +194,24 @@ span.aboutText {
 
 /*                                  MEDIA QUERRIES */
 @media (max-width: 720px), (max-height: 720px) {
+    body {
+        font-size: 13px;
+        
+    }
+    span {
+        font-size: 13px;
+    }
+    a.firmTitle span {
+        font-size: 20px;
+        color: #0bf;
+    }
+    div.header {
+        padding: 0 5%;
+    }
+    div.footer {
+        padding: 0 5%;
+    }
+
     div.sectionsList {
         flex-direction: column;
         align-items: stretch;
@@ -205,67 +224,37 @@ span.aboutText {
         display: flex;
         flex-direction: row;
         width: 100%;
+         animation: none;
     }
+
     a.section img {
         max-height: 90%;
         width: auto;
+         animation: none;
     }
 
     a.section span {
         display: block;
-    }
-
-    a.navItem {
-        padding: 0;
-        margin: 0;
-    }
-    div.header {
-        padding: 0;
-        margin: 0;
-    }
-}
-
-/*
- hanhelds: >282 
- max-device-width: xcm
-
-*/
-@media (max-width: 12cm) and (max-height: 15cm), (max-width: 15cm) and (max-height: 12cm) {
-    body {
-        font-size: 13px;
-        
-    }
-    span {
-        font-size: 13px;
-    }
-
-    a.firmTitle span {
-        font-size: 20px;
-        color: #0bf;
-    }
-    div.header {
-        padding: 0;
-    }
-    div.footer {
-        padding: 0;
-    }
-
-    a.section {
-        animation: none;
-    }
-    a.section img {
-        height: 100px;
-        width: 100px;
-        animation: none;
-    }
-    a.section span {
-        animation: none;
         opacity: 1;
+        animation: none;
     }
+
     a.section:hover span {
        animation: none;
     }
     a.section:hover img {
         animation: none;
     }
+
+    /*a.navItem {
+        padding: 0;
+        margin: 0;
+    }
+    div.header {
+        padding: 0;
+        margin: 0;
+    }*/
 }
+
+/*@media (max-width: 12cm) and (max-height: 15cm), (max-width: 15cm) and (max-height: 12cm) {
+}*/
