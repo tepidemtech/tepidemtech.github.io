@@ -176,33 +176,37 @@ a.footerNavItem {
  /*                                   ABOUT SECTION */
 
 div.about {
-    min-height: 50%;
+    height: 50%;
+    min-height: 100px;
     width: 100%;
+    padding: 40% 0;
 
     display: flex;
     flex-direction: column;
     justify-content: center;
 }
 
-span.aboutText {
+div.about span {
     display: block;
-    font-size: 30px;
-    color: #FFF;
     text-align: center;
+    color: #FFF;
 }
 
 
 /*                                  MEDIA QUERRIES */
 @media (max-width: 720px), (max-height: 720px) {
     body {
-        font-size: 13px;
+        font-size: 18px;
         
     }
     span {
-        font-size: 13px;
+        font-size: 18px;
+    }
+    span.aboutTxt {
+        font-size: 18px;
     }
     a.firmTitle span {
-        font-size: 20px;
+        font-size: 22px;
         color: #0bf;
     }
     div.header {
@@ -245,15 +249,6 @@ span.aboutText {
     a.section:hover img {
         animation: none;
     }
-
-    /*a.navItem {
-        padding: 0;
-        margin: 0;
-    }
-    div.header {
-        padding: 0;
-        margin: 0;
-    }*/
 }
 
 /*@media (max-width: 12cm) and (max-height: 15cm), (max-width: 15cm) and (max-height: 12cm) {
