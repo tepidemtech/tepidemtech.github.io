@@ -70,7 +70,8 @@ div.header {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 20px;
-    max-height: 10%;
+    height: 10%;
+    max-height: 50px;
     background: #1D1D1D;
 }
 
@@ -191,7 +192,7 @@ span.aboutText {
 
 
 /*                                  MEDIA QUERRIES */
-@media (max-width: 720px) {
+@media (max-width: 720px), (max-height: 720px) {
     div.sectionsList {
         flex-direction: column;
         align-items: stretch;
