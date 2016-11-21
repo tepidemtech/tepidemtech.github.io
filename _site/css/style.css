@@ -131,6 +131,7 @@ a.section img {
 
 a.section span {
     display: block;
+    width: 100%;
     animation: sectionSpanOut 2s forwards;
 }
 
@@ -183,12 +184,13 @@ span.aboutText {
     text-align: center;
 }
 
-@media (max-width: 720px), handheld and (orientation: portrait) {
+
+/*                                  MEDIA QUERRIES */
+@media (max-width: 720px) {
     div.sectionsList {
         flex-direction: column;
         align-items: stretch;
         justify-content: space-between;
-        padding: 0 20px;
 
         height: 100%;
     }
@@ -197,37 +199,26 @@ span.aboutText {
         display: flex;
         flex-direction: row;
         width: 100%;
-        animation: none;
     }
     a.section img {
-        animation: none;
+        max-height: 70%;
+        width: auto;
     }
 
     a.section span {
         display: block;
-        width: 100%;
-        opacity: 1;
-        animation: none;
     }
-
-    a.section:hover span {
-       animation: none;
-    }
-    a.section:hover img {
-        animation: none;
-    }
-}
-
-@media handheld and (orientation: landscape) {
      a.section {
         animation: none;
     }
     a.section img {
+        height: 100px;
+        width: 100px;
         animation: none;
     }
     a.section span {
-        opacity: 1;
         animation: none;
+        opacity: 1;
     }
     a.section:hover span {
        animation: none;
@@ -237,15 +228,42 @@ span.aboutText {
     }
 }
 
-@media handheld {
-
+@media (max-width: 9cm) and (max-height: 15cm), (max-width: 15cm) and (max-height: 9cm) {
     body {
         font-size: 13px;
-    }
-    a.firmTitle span { {
-        font-size: 20px;
+        
     }
     span {
         font-size: 13px;
+    }
+
+    a.firmTitle span {
+        font-size: 20px;
+        color: #0bf;
+    }
+    div.header {
+        padding: 0;
+    }
+    div.footer {
+        padding: 0;
+    }
+
+    a.section {
+        animation: none;
+    }
+    a.section img {
+        height: 100px;
+        width: 100px;
+        animation: none;
+    }
+    a.section span {
+        animation: none;
+        opacity: 1;
+    }
+    a.section:hover span {
+       animation: none;
+    }
+    a.section:hover img {
+        animation: none;
     }
 }

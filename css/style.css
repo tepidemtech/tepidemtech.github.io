@@ -208,9 +208,27 @@ span.aboutText {
     a.section span {
         display: block;
     }
+     a.section {
+        animation: none;
+    }
+    a.section img {
+        height: 100px;
+        width: 100px;
+        animation: none;
+    }
+    a.section span {
+        animation: none;
+        opacity: 1;
+    }
+    a.section:hover span {
+       animation: none;
+    }
+    a.section:hover img {
+        animation: none;
+    }
 }
 
-@media (max-width: 9cm), (max-height: 15 cm) {
+@media (max-width: 9cm) and (max-height: 15cm), (max-width: 15cm) and (max-height: 9cm) {
     body {
         font-size: 13px;
         
@@ -239,8 +257,8 @@ span.aboutText {
         animation: none;
     }
     a.section span {
-        opacity: 1;
         animation: none;
+        opacity: 1;
     }
     a.section:hover span {
        animation: none;
