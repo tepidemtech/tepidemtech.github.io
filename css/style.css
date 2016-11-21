@@ -131,6 +131,7 @@ a.section img {
 
 a.section span {
     display: block;
+    width: 100%;
     animation: sectionSpanOut 2s forwards;
 }
 
@@ -204,8 +205,6 @@ span.aboutText {
 
     a.section span {
         display: block;
-        width: 100%;
-        opacity: 1;
     }
 }
 
@@ -233,7 +232,7 @@ span.aboutText {
         animation: none;
     }
     a.section img {
-        max-height: 500%;
+        height: 50%;
         width: auto;
         animation: none;
     }
