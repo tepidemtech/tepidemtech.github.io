@@ -197,48 +197,19 @@ span.aboutText {
         display: flex;
         flex-direction: row;
         width: 100%;
-        animation: none;
     }
     a.section img {
-        animation: none;
+        max-height: 20%;
     }
 
     a.section span {
         display: block;
         width: 100%;
         opacity: 1;
-        animation: none;
-    }
-
-    a.section:hover span {
-       animation: none;
-    }
-    a.section:hover img {
-        animation: none;
-    }
-}
-
-@media handheld and (orientation: landscape) {
-     a.section {
-        animation: none;
-    }
-    a.section img {
-        animation: none;
-    }
-    a.section span {
-        opacity: 1;
-        animation: none;
-    }
-    a.section:hover span {
-       animation: none;
-    }
-    a.section:hover img {
-        animation: none;
     }
 }
 
 @media handheld {
-
     body {
         font-size: 13px;
     }
@@ -247,5 +218,22 @@ span.aboutText {
     }
     span {
         font-size: 13px;
+    }
+
+    a.section {
+        animation: none;
+    }
+    a.section img {
+        animation: none;
+    }
+    a.section span {
+        opacity: 1;
+        animation: none;
+    }
+    a.section:hover span {
+       animation: none;
+    }
+    a.section:hover img {
+        animation: none;
     }
 }
