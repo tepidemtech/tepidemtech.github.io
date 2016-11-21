@@ -179,7 +179,7 @@ div.about {
     height: 50%;
     min-height: 100px;
     width: 100%;
-    padding: 40% 0;
+    padding: 10% 0;
 
     display: flex;
     flex-direction: column;
@@ -245,6 +245,10 @@ div.about span {
     }
     a.section:hover img {
         animation: none;
+    }
+
+    div.about {
+        padding: 40% 0;
     }
 
     div.about span {
