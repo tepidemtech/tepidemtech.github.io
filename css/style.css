@@ -199,7 +199,7 @@ span.aboutText {
         width: 100%;
     }
     a.section img {
-        max-height: 500%;
+        max-height: 50%;
         width: auto;
     }
 
@@ -232,7 +232,7 @@ span.aboutText {
         animation: none;
     }
     a.section img {
-        height: 50%;
+        height: 30%;
         width: auto;
         animation: none;
     }
