@@ -70,6 +70,7 @@ div.header {
     justify-content: space-between;
     margin: 0 auto;
     padding: 0 20px;
+    height: 10%;
     background: #1D1D1D;
 }
 
@@ -95,6 +96,10 @@ ul.mainNav {
 a.navItem {
     color: #0bf;
     margin-right: 20px;
+}
+
+div.content {
+    width: 100%;
 }
 
 
@@ -146,7 +151,7 @@ a.section:hover span {
 
 /*                                  FOOTER CLASSES*/
 div.footer {
-    height: 65px;
+    height: 10%;
     margin: 0 auto;
     padding: 0 20px;
     align-content: center;
@@ -192,7 +197,7 @@ span.aboutText {
         align-items: stretch;
         justify-content: space-between;
 
-        height: 100%;
+        height: 90%;
     }
 
     a.section {
@@ -201,34 +206,30 @@ span.aboutText {
         width: 100%;
     }
     a.section img {
-        max-height: 70%;
+        max-height: 90%;
         width: auto;
     }
 
     a.section span {
         display: block;
     }
-     a.section {
-        animation: none;
+
+    a.navItem {
+        padding: 0;
+        margin: 0;
     }
-    a.section img {
-        height: 100px;
-        width: 100px;
-        animation: none;
-    }
-    a.section span {
-        animation: none;
-        opacity: 1;
-    }
-    a.section:hover span {
-       animation: none;
-    }
-    a.section:hover img {
-        animation: none;
+    div.header {
+        padding: 0;
+        margin: 0;
     }
 }
 
-@media (max-width: 9cm) and (max-height: 15cm), (max-width: 15cm) and (max-height: 9cm) {
+/*
+ hanhelds: >282 
+ max-device-width: xcm
+
+*/
+@media (max-width: 12cm) and (max-height: 15cm), (max-width: 15cm) and (max-height: 12cm) {
     body {
         font-size: 13px;
         
