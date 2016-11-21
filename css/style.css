@@ -188,7 +188,6 @@ span.aboutText {
         flex-direction: column;
         align-items: stretch;
         justify-content: space-between;
-        padding: 0 20px;
 
         height: 100%;
     }
@@ -213,13 +212,21 @@ span.aboutText {
 @media handheld {
     body {
         font-size: 13px;
+        
     }
+    span {
+        font-size: 13px;
+    }
+
     a.firmTitle span {
         font-size: 20px;
         color: #0bf;
     }
-    span {
-        font-size: 13px;
+    div.header {
+        padding: 0;
+    }
+    div.footer {
+        padding: 0;
     }
 
     a.section {
