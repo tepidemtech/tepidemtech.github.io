@@ -26,28 +26,12 @@ h1 {
     font-weight: normal;
 }
 
-h2 {
-    font-size: 60px;
-    text-align: center;
-}
-
-h3 {
-    font-size: 1.8em;
-    margin: 15px 0;
-}
-
 span {
     display: block;
     font-size: 30px;
     color: #FFF;
     text-align: center;
 }
-
-embed {
-    width: 100%;
-    height: 100%;
-}
-
 
 /*                                  ANIMATION KEYFRAMES*/
 @keyframes sectionImgIn {
@@ -95,8 +79,10 @@ a.firmTitle {
     margin-top: 7px;
 }
 
-a.firmTitle h1 {
+a.firmTitle span {
     margin-left: 7px;
+    font-size: 40px;
+    font-weight: normal;
     color: #0bf;
 }
 
@@ -248,5 +234,18 @@ span.aboutText {
     }
     a.section:hover img {
         animation: none;
+    }
+}
+
+@media handheld {
+
+    body {
+        font-size: 13px;
+    }
+    a.firmTitle span { {
+        font-size: 20px;
+    }
+    span {
+        font-size: 13px;
     }
 }
