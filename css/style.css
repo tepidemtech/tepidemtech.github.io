@@ -199,7 +199,8 @@ span.aboutText {
         width: 100%;
     }
     a.section img {
-        max-height: 20%;
+        max-height: 500%;
+        width: auto;
     }
 
     a.section span {
@@ -215,6 +216,7 @@ span.aboutText {
     }
     a.firmTitle span {
         font-size: 20px;
+        color: #0bf;
     }
     span {
         font-size: 13px;
@@ -224,6 +226,8 @@ span.aboutText {
         animation: none;
     }
     a.section img {
+        max-height: 500%;
+        width: auto;
         animation: none;
     }
     a.section span {
