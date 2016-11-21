@@ -202,9 +202,6 @@ div.about span {
     span {
         font-size: 18px;
     }
-    span.aboutTxt {
-        font-size: 18px;
-    }
     a.firmTitle span {
         font-size: 22px;
         color: #0bf;
@@ -248,6 +245,10 @@ div.about span {
     }
     a.section:hover img {
         animation: none;
+    }
+
+    div.about span {
+        font-size: 18px;
     }
 }
 
