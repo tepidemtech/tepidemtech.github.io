@@ -36,6 +36,18 @@ h3 {
     margin: 15px 0;
 }
 
+span {
+    display: block;
+    font-size: 30px;
+    color: #FFF;
+    text-align: center;
+}
+
+embed {
+    width: 100%;
+    height: 100%;
+}
+
 
 /*                                  ANIMATION KEYFRAMES*/
 @keyframes sectionImgIn {
@@ -101,38 +113,38 @@ a.navItem {
 
 
 /*                                  BODY CLASSES*/
-div.sectionWrapper {
-    height: 100% - 65px;
+div.sectionsList {
+    height: 100%;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: end;
     justify-content: space-around;
-    margin: 30px 20px 30px 20px;
-    /*margin-right: 20px;*/
+
+    height: 100%;
+    align-items: center;
 }
 
 /*                  SECTION CLASSES*/
-
 a.section {
-    display: block; 
-    height: 80%;
-    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    width: 200px;
+    height: 400px;
     animation: section 2s forwards;
 }
 
 a.section img {
-    height: 100%;
-    width: 100%;
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; 
+
     animation: sectionImgOut 2s forwards;
 }
 
 a.section span {
-    position: relative;
-    bottom: 50%;
-
-    font-size: 30px;
-    color: #FFF;
-
+    display: block;
     animation: sectionSpanOut 2s forwards;
 }
 
@@ -164,4 +176,77 @@ ul.footerNav {
 a.footerNavItem {
     color: #0bf;
     margin-right: 20px;
+}
+
+
+ /*                                   ABOUT SECTION */
+
+div.about {
+    min-height: 50%;
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+span.aboutText {
+    display: block;
+    font-size: 30px;
+    color: #FFF;
+    text-align: center;
+}
+
+@media (max-width: 720px), handheld and (orientation: portrait) {
+    div.sectionsList {
+        flex-direction: column;
+        align-items: stretch;
+        justify-content: space-between;
+        padding: 0 20px;
+
+        height: 100%;
+    }
+
+    a.section {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        animation: none;
+    }
+    a.section img {
+        animation: none;
+    }
+
+    a.section span {
+        display: block;
+        width: 100%;
+        opacity: 1;
+        animation: none;
+    }
+
+    a.section:hover span {
+       animation: none;
+    }
+    a.section:hover img {
+        animation: none;
+    }
+}
+
+@media handheld and (orientation: landscape) {
+     a.section {
+        animation: none;
+    }
+    a.section img {
+        animation: none;
+    }
+    a.section span {
+        opacity: 1;
+        animation: none;
+    }
+    a.section:hover span {
+       animation: none;
+    }
+    a.section:hover img {
+        animation: none;
+    }
 }
