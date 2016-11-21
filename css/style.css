@@ -186,7 +186,7 @@ span.aboutText {
 
 
 /*                                  MEDIA QUERRIES */
-@media (max-width: 720px), handheld and (orientation: portrait) {
+@media (max-width: 720px) {
     div.sectionsList {
         flex-direction: column;
         align-items: stretch;
@@ -201,7 +201,7 @@ span.aboutText {
         width: 100%;
     }
     a.section img {
-        max-height: 50%;
+        max-height: 70%;
         width: auto;
     }
 
@@ -234,8 +234,8 @@ span.aboutText {
         animation: none;
     }
     a.section img {
-        height: 30%;
-        width: auto;
+        height: 100px;
+        width: 100px;
         animation: none;
     }
     a.section span {
