@@ -58,6 +58,11 @@ a {
   height: 92vh;
 }
 
+.section > div {
+	min-width: 50%;
+	width: auto;
+}
+
 .content-left, .content-right {
 	margin-right: 2vw;
   height:calc(100% - 80.88px);
